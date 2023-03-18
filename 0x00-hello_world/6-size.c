@@ -12,11 +12,11 @@ long longtype;
 long long int longinttype;
 float floattype;
 
-printf("Size of a chart: %lu byte(s)\n", sizeof(chartype));
-printf("Size of an int: %lu byte(s)\n", sizeof(intype));
-printf("Size of a long int: %lu byte(s)\n", sizeof(longtype));
-printf("Size of a long long int: %lu byte(s)\n", sizeof(longinttype));
-printf("Size of a float: %lu byte(s)\n", sizeof(floattype));
+printf("Size of a chart: %lu byte(s)\n",(unsigned long)sizeof(chartype));
+printf("Size of an int: %lu byte(s)\n",(unsigned long)sizeof(intype));
+printf("Size of a long int: %lu byte(s)\n",(unsigned long)sizeof(longtype));
+printf("Size of a long long int: %lu byte(s)\n",(unsigned long)sizeof(longinttype));
+printf("Size of a float: %lu byte(s)\n",(unsigned long)sizeof(floattype));
 
 return (0);
 }
