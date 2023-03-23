@@ -1,25 +1,25 @@
 #include <stdio.h>
 
 /**
- * main - Entry point
- * Return: Always 0
+ * main- Entry point
+ *
+ * Desciption: print all alphabet letters except q and e
+ *
+ * Return: Always 0 (Success)
  */
+
 int main(void)
 {
-	int i;
+	char ch = 'a';
 
-	for (i = 'a'; i <= 'z'; i++)
-		putchar(i);
-
-
-	for (i = 'A'; i <= 'Z'; i++)
+	while (ch <= 'z')
 	{
-		putchar(i);
-
-		if (i == 'Z')
-			putchar('\n');
+		if (ch == 'e' || ch == 'q')
+			++ch;
+		putchar(ch);
+		++ch;
 	}
+	putchar('\n');
 
 	return (0);
 }
-
