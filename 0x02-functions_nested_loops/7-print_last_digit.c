@@ -1,25 +1,17 @@
+#include <stdio.h>
+#include <stdlib.h>
 #include "main.h"
-
 /**
- * print_diagonal - The function to print diagonal
- * @n: The length of the diagonal
- * Return: Nothing
+ * print_last_digit - Entry point
+ * @x: The number we will retrieve the last digit
+ * Return: The last digit of x
  */
-void print_diagonal(int n)
+int print_last_digit(int x)
 {
-	int i, s;
+	int n;
 
-	if (n <= 0)
-		_putchar('\n');
-
-	for (i = 0; i < n; i++)
-	{
-		for (s = 0; s < i; s++)
-		{
-			_putchar(' ');
-
-		}
-		_putchar('\\');
-		_putchar('\n');
-	}
+	n = abs(x % 10);
+	_putchar('0' + n);
+	return (n);
 }
+
