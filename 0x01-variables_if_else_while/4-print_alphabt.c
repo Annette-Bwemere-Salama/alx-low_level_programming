@@ -1,9 +1,9 @@
-#include <stdio.h>
+#include<stdio.h>
 
 /**
- * main- Entry point
+ * main - Entry point
  *
- * Desciption: print all alphabet letters except q and e
+ * Description: print all aplhabet letters except q and e
  *
  * Return: Always 0 (Success)
  */
