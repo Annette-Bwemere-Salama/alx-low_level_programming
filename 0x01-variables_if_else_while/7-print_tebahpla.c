@@ -14,10 +14,10 @@ int main(void)
 
 	while (alph >= 'a')
 	{
-		putalphar(alph);
+		putchar(alph);
 		--alph;
 	}
-	putalphar('\n');
+	putchar('\n');
 
 	return (0);
 }
