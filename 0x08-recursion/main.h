@@ -12,5 +12,5 @@ int is_prime_number(int n);
 int is_palindrome(char *s);
 int factorial(int n);
 void _puts_recursion(char *s);
-
+int wildcmp(char *s1, char *s2);
 #endif /* MAIN_H */
