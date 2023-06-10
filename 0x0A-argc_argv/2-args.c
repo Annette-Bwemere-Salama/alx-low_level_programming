@@ -1,25 +1,19 @@
 #include <stdio.h>
 
 /**
- * main - Program that prints the name of this followed by a new line
- * All arguments should be printed, including the first one
- *Only print one argument per line, ending with a new line
- *
- * @argc: argument count
- * @argv: argument vector
- *
- * Return: 0 on success
+ * main - Entry point
+ * @argv: THe array of argumets
+ * @argc: THe number of argument
+ * Return: Always 0
  */
-
-
-
-int main(int argc, char *argv[])
+int main(int argc, char **argv)
 {
-int i;
-for (i = 0; i < argc; i++)
-{
-printf("%s\n", argv[i]);
-}
+	int i;
 
-return (0);
+	for (i = 0; i < argc; i++)
+	{
+		printf("%s\n", argv[i]);
+	}
+
+	return (0);
 }
