@@ -1,33 +1,29 @@
 #include <stdio.h>
 #include <stdlib.h>
-#include "main.h"
 
-/*
-* white the programm that multipy two numbers
-*Your program should print the result of the multiplication,
-*followed by a new line
-*You can assume that the two numbers and result of the multiplication
-*can be stored in an integer
-*If the program does not receive two arguments, your program should print Error,
-*followed by a new line, and return 1
-*
-* @argc: argument
-* @argv: argument
-*/
-
+/**
+ * main - Entry point
+ * @argc: The argc
+ * @argv: The argv
+ * Return: 0 or 1
+ */
 int main(int argc, char *argv[])
 {
-    int num1, num2, product;
-if (argc != 3)
-{
-printf("Error\n");
-return (1);
-}
+	int mul = 1;
+	int x, y = 0;
 
-    num1 = atoi(argv[1]);
-    num2 = atoi(argv[2]);
-    product = num1 * num2;
+	if (argc >= 3)
+	{
+		x = atoi(argv[1]);
+		y = atoi(argv[2]);
 
-    printf("%d\n", product);
-    return (0);
+		printf("%d\n", x * y);
+	}
+	else
+	{
+		printf("%s\n", "Error");
+		return (mul);
+	}
+
+	return (0);
 }
